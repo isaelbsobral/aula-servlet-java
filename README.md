@@ -18,6 +18,7 @@ Atividade realizada durante a aula de Desenvolvimento de Sistemas 2 no curso té
 - Postman - Ferramenta de testes de APIs e Requisições.
 - Servlet - Classe Java para criação de um mini servidor.
 - Apache Tomcat - Servidor Web Java.
+- JSTL - **JSP Standard Tag Library**Biblioteca para manipulação de HTML com Java.
 
 
 
@@ -28,3 +29,4 @@ Atividade realizada durante a aula de Desenvolvimento de Sistemas 2 no curso té
 - Criação e teste de requisições GET e POST
 - Integração de página HTML com Java e Servlet
 - Utilização de servidor Tomcat para usar a classe Servlet
+- Utilização da classe JSTL.

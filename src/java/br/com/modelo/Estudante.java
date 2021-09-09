@@ -5,13 +5,20 @@
  */
 package br.com.modelo;
 
+import java.util.Date;
+
 /**
  *
  * @author isael
  */
 public class Estudante implements Comparable<Estudante>{
+
+    /**
+     * @return the dataNascimento
+     */
     private int id;
     private String nome;
+    private Date dataNascimento = new Date();
    // private double media;
    
     /*public double getMedia() {
@@ -22,6 +29,17 @@ public class Estudante implements Comparable<Estudante>{
     /*public void setMedia(double media) {
         this.media = media;
     }*/
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    /**
+     * @param dataNascimento the dataNascimento to set
+     */
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+    
 
    
     
