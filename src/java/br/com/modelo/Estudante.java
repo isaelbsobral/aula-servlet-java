@@ -13,46 +13,26 @@ import java.util.Date;
  */
 public class Estudante implements Comparable<Estudante>{
 
-    /**
-     * @return the dataNascimento
-     */
-    private int id;
+     private int id;
     private String nome;
     private Date dataNascimento = new Date();
-   // private double media;
-   
-    /*public double getMedia() {
-        return media;
-    }*/
-
+    private static int tipoOrdenar = 0;
     
-    /*public void setMedia(double media) {
-        this.media = media;
-    }*/
+   
     public Date getDataNascimento() {
         return dataNascimento;
     }
-
-    /**
-     * @param dataNascimento the dataNascimento to set
-     */
+    
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
-    }
-    
+    }  
 
-   
-    
     public int getId() {
         return id;
     }
-
-    
     public void setId(int id) {
         this.id = id;
     }
-
-    
     public String getNome() {
         return nome;
     }
@@ -61,9 +41,21 @@ public class Estudante implements Comparable<Estudante>{
     public void setNome(String nome) {
         this.nome = nome;
     }
+    public  int getTipoOrdenar() {
+        return tipoOrdenar;
+    }
+
    
+    public void setTipoOrdenar(int aTipoOrdenar) {
+        tipoOrdenar = aTipoOrdenar;
+    }
     @Override
     public int compareTo(Estudante e){
-        return nome.compareTo(e.getNome());
+        if(e.getTipoOrdenar()== 0){
+          return nome.compareToIgnoreCase(e.getNome());  
+        }else{
+            return dataNascimento.compareTo(e.getDataNascimento());
+        }
+        
     }
 }

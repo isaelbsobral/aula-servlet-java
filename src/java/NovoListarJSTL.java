@@ -2,6 +2,7 @@
 import br.com.dao.Banco;
 import br.com.modelo.Estudante;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -27,6 +28,7 @@ public class NovoListarJSTL extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Banco meuBanco = new Banco();
         List<Estudante> lista = meuBanco.getEstudantes();
+        //Collections.sort(lista);//Aqui já ordena por nome a lista cada vez que um estudante é cadastrado
         
         req.setAttribute("estudantes", lista);
         RequestDispatcher rd = req.getRequestDispatcher("/lista_estudantes.jsp");
