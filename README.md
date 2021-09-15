@@ -1,7 +1,7 @@
 
 # Aula Servlet em Java
 
-Atividade realizada durante a aula de Desenvolvimento de Sistemas 2 no curso técnico em Desenvolvimento de Sistema pelo SENAI - BA.
+Atividade realizada durante a aula de Desenvolvimento de Sistemas 2 no curso técnico em Desenvolvimento de Sistemas pelo SENAI - BA.
 
 
 
@@ -18,7 +18,7 @@ Atividade realizada durante a aula de Desenvolvimento de Sistemas 2 no curso té
 - Postman - Ferramenta de testes de APIs e Requisições.
 - Servlet - Classe Java para criação de um mini servidor.
 - Apache Tomcat - Servidor Web Java.
-- JSTL - **JSP Standard Tag Library**Biblioteca para manipulação de HTML com Java.
+- JSTL - **JSP Standard Tag Library** - Biblioteca para manipulação de HTML com Java.
 
 
 
