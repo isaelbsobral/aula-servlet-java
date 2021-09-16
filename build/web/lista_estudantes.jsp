@@ -12,10 +12,16 @@
     <body>
         
         <%@include file="menu.jsp" %><!--add arquivos na página-->
-         <h4>Estudantes Cadastrados</h4>
+         <h3>Estudantes Cadastrados</h3>
         <c:forEach items="${estudantes}" var="estudante"> <!--criando variaveis q receberão os valores das expressoes-->
             <fmt:formatDate value="${estudante.dataNascimento}" pattern="dd/MM/yyyy" var="dataFormatada"/>
-            <li>${estudante.nome} ${dataFormatada} </li>
+            <li>ID: ${estudante.id} | Nome: ${estudante.nome} | Nascimento: ${dataFormatada}
+                <a href="editarEstudante?id=${estudante.id}">Editar</a>
+                <a href="removerEstudante?id=${estudante.id}">Remover</a>
+            
+            
+            </li>
+            
             
         </c:forEach>
         

@@ -35,5 +35,13 @@ public class Banco {
     public List<Estudante> getEstudantes(){
         return Banco.listaEstudante;
     }
-            
+ 
+    public Estudante getEstudantesId(int id){
+        for(Estudante estudante:listaEstudante){
+            if(estudante.getId()==id){
+                return estudante;
+            }
+        }
+        return null;
+    }
 }
